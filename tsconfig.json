@@ -6,4 +6,5 @@
     "esModuleInterop":true,
     "strict": true
 }, 
-"files": ["myserver.ts"]}
+"files": ["myserver.ts"]
+}
