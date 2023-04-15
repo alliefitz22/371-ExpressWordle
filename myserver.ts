@@ -7,8 +7,8 @@ const PORT = process.env.PORT ?? 8000;
 const wordArray = ["apple", "shade", "watch", "agree", "power", "piece", "bloom", "plead", "sorry", "spoon", "bunny", "pause", "audio", "dream"]
 //Define GET endpoint(s)
 app.get("/", (req:Request, res:Response) => {
-    let tosend = {randomWord: wordArray[Math.floor(Math.random() * wordArray.length)]}
-    res.json(tosend)
+    let word = wordArray[Math.floor(Math.random() * wordArray.length)]
+    res.send({randomWord: word })
 });
 
 app.listen(PORT, () => {
