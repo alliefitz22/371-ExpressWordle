@@ -8,7 +8,7 @@ const wordArray = ["apple", "shade", "watch", "agree", "power", "piece", "bloom"
 //Define GET endpoint(s)
 app.get("/", (req:Request, res:Response) => {
     let word = wordArray[Math.floor(Math.random() * wordArray.length)]
-    res.send({randomWord: word })
+    res.send({secret: word })
 });
 
 app.listen(PORT, () => {
